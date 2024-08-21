@@ -52,6 +52,12 @@ hr {
     padding-bottom: 20px;
 }
 
+.custom-hr {
+    border-top: 5px solid #1abc9c;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
 .colour-splash {
     color: #1abc9c;
 }
@@ -66,7 +72,7 @@ hr {
  * =================================================================== */
 
 .section-image {
-    background: #151515 url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=1199&h=799&q=80) no-repeat center center;
+    background: #151515 url(https://images.unsplash.com/photo-1724236363467-83c1e78e8ec1?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -226,8 +232,12 @@ section {
 }
 
 #skills {
-    background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+    background: #151515 url(https://images.unsplash.com/photo-1724237504373-7fa2963ec3c4?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
     height: auto;
+    min-height: 100vh; 
 }
 
 /* 05. Footer
@@ -243,9 +253,73 @@ footer {
 
 }
 
+.custom-section {
+    position: static;
+    bottom: 0;
+    background-color: black;
+    color: #fff;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
 footer p {
     padding: 15px;
     opacity: 0.8;
+}
+
+/* 05. Email 
+ * =================================================================== */
+
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.contact-section h2 {
+    text-align: center;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.contact-section .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-section .submit-btn:hover {
+    background-color: #28a68d;
 }
 
 /* Mouse Icon
@@ -362,9 +436,10 @@ footer p {
     }
 
     #skills {
-        background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+        background: #151515 url(https://images.unsplash.com/photo-1724237504373-7fa2963ec3c4?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;
         background-position: top center;
-
+        background-size: cover; /* Ensures the image covers the entire area */
+        height: auto;
     }
 }
 

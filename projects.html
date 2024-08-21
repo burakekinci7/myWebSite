@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel="stylesheet">
+    <!-- FontAwesome Icon Font -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- LinearIcons Icon Font -->
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet"><!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet"><!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        defer></script>
+    <script src="js/email_form.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-primary" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0 text-center">
+                    <img class="profilepic" src="">
+                    <h2>Blogex</h2>
+                    <hr class="custom-hr">
+                    <p class="lead"> <span>Flutter</span> ile güzel ve duyarlı mobil uygulamalar geliştiren, iOS
+                        geliştirme için Swift
+                        kullanan ve JavaScript ile ölçeklenebilir backend çözümleri üreten çok yönlü bir geliştiriciyim.
+                        Hem SQL hem de NoSQL veritabanlarında güçlü bir altyapıya sahibim, bu sayede veri odaklı
+                        uygulamaları hassasiyetle tasarlayıp yönetebiliyorum. Mobil uygulama geliştirmekten, backend
+                        hizmetleri oluşturmaktan veya veritabanlarını optimize etmekten hoşlanırım ve her zaman karmaşık
+                        sorunları çözerek yüksek kaliteli yazılımlar teslim etmeyi hedeflerim.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Bir Mail Kadar Yakınım</h2>
+            <p class="lead">Aklınızda bir proje varsa, işbirliği yapmak istiyorsanız veya sadece biraz tavsiyeye
+                ihtiyacınız varsa, bana ulaşmaktan çekinmeyin. <br>
+                Her zaman yeni fırsatlara ve zorluklara açığım.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">İsminiz ve Soyisminiz</label>
+                    <input type="text" id="name" name="name" required placeholder="İsmini giriniz">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Adresiniz</label>
+                    <input type="email" id="email" name="email" required placeholder="Emaili giriniz">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Konu Başlığı</label>
+                    <input type="subject" id="subject" name="subject" required placeholder="Başlığı giriniz">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesajınız</label>
+                    <textarea id="message" name="message" required
+                        placeholder="Size nasıl yardımcı olabilirim?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Mesaji Gönder</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
